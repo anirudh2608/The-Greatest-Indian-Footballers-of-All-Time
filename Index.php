@@ -1,3 +1,4 @@
 <?php
- header('Location:/home.html') 
+//  header('Location:/home.html') 
+include_once("home.html");
 ?>
