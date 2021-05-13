@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Navbar_style.css">
+    <link rel="stylesheet" href="Contact_style.css">
+    <title>The Greatest Indian Footballers of All-Time- Contact Us</title>
+</head>
+
+<body>
+    <Header>
+        <nav>
+            <div id="logo"><a href="file:///C:/Users/Anirudh/Desktop/The%20Greatest%20Indian%20Footballers%20of%20All-Time/Index.html">
+                    <img src="logo_india.png">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="file:///C:/Users/Anirudh/Desktop/The%20Greatest%20Indian%20Footballers%20of%20All-Time/Index.html">Home</a></li>
+                <li><a href="file:///C:/Users/Anirudh/Desktop/The%20Greatest%20Indian%20Footballers%20of%20All-Time/AboutPage.html">About Us</a></li>
+                <li><a href="file:///C:/Users/Anirudh/Desktop/The%20Greatest%20Indian%20Footballers%20of%20All-Time/ContactPage.html">Contact
+                        Us</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </Header>
+    <section>
+        <div class="contact_container">
+            <div class="contact_text">
+                <h1>Contact</h1>
+                <p>For any complaints and inquiries please contact us below:</p>
+                <form name="myform" id="form" onsubmit="return validateform()" method="POST">
+                    <label for="fname" name="fName">Your Name(required) </label><br>
+                    <input type="text" id="fname" name="fname">
+                    <p class="alert_name">Please Enter your Name</p><br>
+                    <label for="email" style="margin-top: 2rem;">Your email id(required)</label><br>
+                    <input type="email" id="email" name="email">
+                    <p class="alert_email">Please Enter your Email id</p><br>
+                    <label for="subject">Subject</label><br>
+                    <input type="text" class="subject_margin" name="subject"> <br>
+                    <label for="message">Message</label><br>
+                    <textarea name="Text1" cols="40" rows="5" id="message" name="message"
+                        style="max-width:100%;"></textarea> <br>
+                    <input type="submit" name="send">
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="Script.js"></script>
+    <script src="Contact_script.js"></script>
+</body>
+
+</html>

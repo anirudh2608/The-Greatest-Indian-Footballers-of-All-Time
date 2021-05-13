@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /* Import font from Google fonts */
+
+ 
+html{
+    font-size: 62.5%; /* Adjust the font-size of the HTML elements*/  
+                           /*According to this 1rem = 10px*/ 
+}
+
+
+body{
+    background:url(Background.jpg) no-repeat center center/cover fixed;  /* Page Background Image */
+    font-family: 'Roboto', sans-serif; /* Page font */
+}
+
+
+/* Container for About Us text*/
+.about_container{  
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    position: relative;
+    padding: 5rem 20rem;
+    margin: auto;   
+    width: 100%;
+    height: 100vh;
+}
+
+/* Content placement for content inside the .about_container */
+.about_text{
+    position: relative;
+    margin: auto;   
+    padding: 2rem 4rem;
+    width: 80%;
+    color: white;
+}
+ 
+
+h1{
+    font-size: 4rem;  /*Change the font-size of the Heading of About page*/
+    margin-bottom: 1rem;   
+}
+
+p{
+    font-size: 2rem;  /*Change the font-size of the paragraph of About page*/
+    margin:2rem 0rem 2rem 0rem; /* And also ajusting the margin*/
+}
+
+
+
+
+/* Media Quaries for About Us page */
+
+
+@media screen and (max-width:1024px) { 
+    html{
+        font-size: 80%;
+    }
+    .about_text {
+        padding: 2rem 0rem;
+    }
+    .about_container{
+        padding: 10rem 0rem;
+    }   
+    
+    h1{
+        font-size: 5rem;
+    }
+
+    p{
+        font-size: 3rem;
+    }
+
+}
+    
+
+@media screen and (max-width:768px) { 
+    html{
+        font-size: 75%;
+    }
+        
+}
+    
+@media screen and (max-width:540px){
+    html{
+       font-size: 65%;
+   } 
+
+}
+
+
+@media screen and (max-width:414px){
+    html{
+        font-size: 60%;
+    }
+    .burger {
+        padding-left: 20rem;
+    }
+    h1{
+        margin-bottom: 1rem;
+    }
+    
+    p{
+        margin:4rem 0rem 4rem 0rem;
+    }
+        
+}
+ 
+
+@media screen and (max-width:375px){
+    html{
+        font-size: 60%;
+    }
+}
+
+
+@media screen and (max-width:360px){
+    html{
+        font-size: 50%;
+    }
+    
+}
+
+
+@media screen and (max-width:320px){
+    html{
+        font-size: 45%;
+    }
+}
+
+
+@media screen and (max-width:280px){
+    html{
+        font-size: 43%;
+    } 
+}

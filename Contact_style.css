@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /* Import font from Google fonts */
+
+
+html{
+    font-size: 62.5%; /* Adjust the font-size of the HTML elements*/  
+                           /*According to this 1rem = 10px*/
+}
+
+
+body{
+    background:url(Background.jpg) no-repeat center center/cover fixed;  /* Page Background Image */
+    font-family: 'Roboto', sans-serif;  /* Page font */
+}
+
+
+/*  Container for Contact Page */
+.contact_container{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    position: relative;
+    padding: 5rem 20rem;
+    margin: auto;   
+    width: 100%;
+}
+
+
+/*  Container for Contact form  */
+.contact_text{
+    background-color: white;
+    position: relative;
+    padding: 2rem 4rem;
+    margin: auto;   
+    width: 80%;
+}
+
+
+/*  Adjusting the fong-size and margin for Contact form heading*/
+.contact_text h1{
+    font-size: 3rem;
+    margin-bottom: 0.2rem;
+}
+
+
+/*  Adjusting the fong-size and margin for Contact form paragraph*/
+.contact_text p{
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+
+/*  ################################  Designing the form here ########################## */
+
+
+/*  Adjusting the fong-size and margin of Labels*/
+#form label{
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    }
+    
+
+/*  Designing the alert message if user don't full fill the validations */    
+.contact_text .alert_name,.alert_email{
+    color: red;
+    display: none; /*   Display is hidden because if user full fill
+                         all the validation then this message does not show  */
+    }
+    
+    
+ /*     Designing the inputs    */   
+#form input{
+    box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: 4rem;
+    padding: 12px 20px;
+    width: 100%;
+    border: transparent;
+    border-bottom: 2px solid black;
+    border-radius: 4px;
+    }
+
+ 
+/*  Designing the Textarea  */    
+textarea{
+    margin: 1rem 0rem 1rem 0rem;
+    border: transparent;
+    border-bottom: 2px solid black;
+    border-radius: 4px;
+    }
+
+ 
+/*  Designing the submit*/    
+#form input[type=submit]{
+    width: 10rem;
+    }
+
+
+#form input[type=submit]:hover{
+    color: white;
+    background-color: black;
+    
+    }
+    
+ 
+    
+ /*  Media Quaries for Contact Us Page   */   
+
+
+
+    
+@media screen and (max-width:1024px) { 
+        
+    html{
+        font-size: 80%;
+    }
+    
+    body{
+        background: white;
+    }
+    
+    nav {
+        background-color: black;
+    }
+    
+    .contact_container{
+        width: 100%;
+        padding: 0rem;
+    }
+    
+    .contact_text{
+        width: 100%;
+        padding: 5rem 4rem;
+    }
+    
+}
+    
+
+@media screen and (max-width:768px) { 
+
+    html{
+        font-size: 75%;
+    }
+
+}
+    
+
+@media screen and (max-width:540px){
+    
+    html{
+        font-size: 65%;
+        } 
+
+}
+
+
+@media screen and (max-width:414px){
+
+    html{
+        font-size: 60%;
+        }
+
+    .burger {
+        padding-left: 16rem;
+    }
+
+}
+
+
+@media screen and (max-width:375px){
+
+    html{
+        font-size: 60%;
+    }
+
+}

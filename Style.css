@@ -1,0 +1,537 @@
+
+html{
+    font-size: 62.5%;   /* Adjust the font-size of the HTML elements*/  
+                               /*According to this 1rem = 10px*/
+}
+body{
+    background:url(Background.jpg) no-repeat center center/cover fixed; /* Page Background Image */
+
+}
+
+/*  Container for Home page heading */
+#heading_container{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 1); /* Black w/opacity/see-through */
+    position: relative;
+    margin: auto;
+    color: white;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 8rem;
+    width: 80%;
+    }
+
+
+/*  Conrainer for */    
+#background_container{
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4); 
+    position: relative;
+    margin: auto;
+    padding: 3rem 5rem 2rem 1rem;
+    color: white;
+    width: 80%;
+    height: 70vh;
+    font-weight: bold;
+    font-size: 8rem;
+    }
+
+
+/*  Designing the time shown in home page   */
+#time{
+    position:relative;
+    font-size: 2rem;
+    }
+
+
+/*  Designing the Page heading   */    
+#background_container h1{
+    color: white;
+    text-align: -webkit-match-parent;
+    position: relative;
+    bottom: 16rem;
+    right: 4.5rem;
+    }
+
+
+    
+.hh{
+    opacity: 1;
+    font-size: 4rem;
+    }
+
+
+/*  This is the container for all the text img in page after heading    */
+.content{
+    margin: auto;
+    padding: 2rem 30rem 2rem 3rem;
+    background-color: white;
+    width: 80%;
+}
+
+/*  share: this is the logo which share the blog to social media    */
+#share{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/*  Designing the share logo    */
+#share img{
+    width: 24px;
+    height: 22px;
+}
+
+#share .share_item img{
+    margin-left: 5px;
+    
+}
+#share .share_item{
+    margin-left: 30px;
+}
+#share .share_item img:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 25px;
+    height: 25px;
+}
+
+
+/*  Designing and positioning the paragragh, image and heading */
+#position p{
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-bottom: 4rem;
+    font-size: 1.8rem;
+}
+#position h1{
+    font-family: 'Grenze', serif;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+#position img{
+    margin-bottom: 0.1rem;
+}
+#position h4{
+    font-family: 'Caveat', cursive;
+    margin-bottom: 2rem;
+}
+
+
+/*  Desgin the slide show at the end of the page*/
+#slideshow{
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4); 
+    width: 100%;
+    padding: 8rem 5rem 8rem 5rem;
+    margin: auto;
+}
+.slideshow-container {
+    position: relative;
+    height: 75vh;
+    z-index: -1;
+  }
+.slideshow-container img{
+    width: 100%;
+    height: 70vh;
+  }
+  
+  /* Caption text */
+.text {
+  color: rgba(248, 247, 247, 0.979);
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0px 12px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+}
+#dot_s{
+    position: relative;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0 0.2rem;
+  margin-bottom: 10rem;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+  /* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+  }
+
+
+/*  Container for Comment box form  */  
+.form_container{
+    background-color: white;
+    width: 50%;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: auto;
+    }
+
+
+.form_container h2{
+    font-size: 2.5rem;
+    } 
+
+
+/*  Designing the input box     */    
+#Comment_form input,textarea{
+    max-width: 100%;
+    width: 80%;
+    padding: 1rem;
+    margin: 1rem;
+    border: transparent;
+    border-bottom: black 2px solid;
+    border-radius: 4px;
+    }
+
+#Comment_form p{
+    padding-left: 1rem;
+    margin: 1rem;
+    color: red;
+    font-size: 1rem;
+    display: none;
+    }
+
+    
+/*  Designing the Comment box button    */    
+#Comment_form button{
+    width: 80%;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+  }
+
+#Comment_form button:hover{
+    background-color: black;
+    color: white;
+    }
+
+
+/*      ####### Media quaries   #######     */    
+
+
+@media screen and (max-width:1024px) { 
+    
+    body{
+        background:url(Background.jpg) no-repeat center center/cover;
+        height: 73vh;
+        width: 100%;
+    }
+    #time{
+        font-size: 3rem;
+    }
+
+    #background_container{
+        padding-top:1rem;
+        height: 58vh;
+        width:100%;
+        }
+
+    #heading_container{
+       width: 100%;
+       padding: 2rem 0rem 2rem 1rem;
+      }
+
+
+    .content{
+        padding: 2rem 6rem 2rem 2rem;
+        background-color: white;
+        width: 100%;
+        }
+
+    #position{
+        right:0rem;
+        }
+        
+    #position p{
+        margin-bottom: 8rem;
+        }
+
+    #position h1{
+        margin-bottom: 0.5rem;
+        }
+    
+    #position img{
+        margin-bottom: 0.1rem;
+        }
+    
+    #position h4{
+        margin-bottom: 1.5rem;
+        }
+    
+        .contact_container {
+            padding: 7rem 10rem;
+        }
+
+    
+#slideshow{
+    background-color: rgba(0,0,0, 0);
+    padding: 8rem 0rem;
+    margin: auto;
+}
+
+.text {
+    color: black;
+
+  }
+
+  .form_container{
+    width: 100%;
+    padding: 2rem;
+}
+
+    }
+    
+
+@media screen and (max-width:768px){
+    html{
+        font-size: 75%;
+    }
+
+    body{
+        background:url(Bhaichung\ butia.jpeg) no-repeat center center/cover;
+        width: 100%;
+        height: 61vh;
+    }   
+    
+    #background_container {
+        padding: 2rem 0rem 0rem 0rem;
+        height: 54vh;
+        width: 100%;
+    }    
+
+    #time{
+        font-size: 2rem;
+    }
+
+    #background_container h1{
+        bottom: 0rem;
+    }
+    
+    .hh{
+        font-size: 3.5rem;
+    }
+
+    #background_container .team_img{
+        display: none;
+        }
+
+    #share .share_item img{
+        margin-left: 1rem;
+        
+        }
+    #share .share_item{
+        margin-left: 4rem;
+        }
+
+    .content{
+        padding: 1rem 5rem 1rem 1.5rem;
+        }
+
+    #position{
+        right:0rem;
+        }
+
+    #position p{
+        font-size: 2.1rem;  
+        }
+
+    #position h1{
+        font-size: 3.5rem;
+        }
+
+    #position h4{
+        font-size: 1.5rem;
+        }
+
+    #position img{
+       width: 45rem;
+       height: 35rem;
+    }
+    
+    .text {
+    color: black;
+    }   
+
+    .form_container{
+        padding: 2rem ;
+    }
+    
+}
+ 
+
+@media screen and (max-width:540px){
+
+    html{
+       font-size: 65%;
+   } 
+
+   .burger{
+       padding-left: 38rem;
+   }
+
+   .hh {
+       font-size: 4rem;
+   }
+
+   .content{
+     padding: 1rem 4.5rem 1rem 1rem;
+     }
+
+   #position{
+       right:0rem;
+   }
+
+   #position h4{
+       font-size: 1.5rem;
+   }
+
+   #position img{
+        width: 41rem;
+        height: 38rem;
+   }
+
+   .text {
+    bottom: 0px;
+  }
+
+}
+
+
+@media screen and (max-width:414px){
+    html{
+        font-size: 55%;
+    } 
+    .burger {
+        padding-left: 34rem;
+    }
+    #background_container{
+        height: 53vh;
+    }
+
+    .hh{
+        font-size: 3.5rem;
+    }
+    #position img{
+        width: 31rem;
+        height: 30rem;
+    }
+    .content{
+       padding: 1rem 4.5rem 1rem 1.5rem;
+    
+    }
+    .text {
+     bottom: -3px;
+    }
+
+    .form_container{
+    padding: 0rem 2rem 0rem 2rem;
+     }
+
+    #Comment_form input,textarea{
+     width: 100%;
+    }
+}
+
+
+@media screen and (max-width:375px){
+    html{
+        font-size: 49%;
+    }
+}
+
+
+@media screen and (max-width:360px){
+
+    html{
+        font-size: 47%;
+    }
+    body{
+        background:url(Sunil\ chhetri.jpg) no-repeat center center/cover;
+        height: 77vh;
+        width: 100%;
+    }
+
+    #background_container{
+        font-size: 10rem;
+        height: 69vh;
+        width:100%;
+    }
+
+    #time{
+        font-size: 3rem;
+    }
+
+    #position img{
+        width: 25rem;
+        height: 25rem;
+   }
+
+   .text {
+    font-size: 1.5rem;
+    padding: 0rem;
+    }
+}
+
+
+@media screen and (max-width:320px){
+
+    html{
+        font-size: 42%;
+    }
+}
+
+
+@media screen and (max-width:280px){
+
+    html{
+        font-size: 40%;
+    }
+
+     .burger {
+        padding-left: 31rem;
+    }
+
+    #time {
+        font-size: 2.5rem;
+    }
+
+    .hh {
+        font-size: 4rem;
+    } 
+}
